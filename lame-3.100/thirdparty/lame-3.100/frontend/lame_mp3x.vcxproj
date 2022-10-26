@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>lame_mp3x</ProjectName>
+    <ProjectGuid>{E745EB1A-070A-45ED-B8BD-D9F794E23CFA}</ProjectGuid>
+    <RootNamespace>mp3x</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./WinGtk/src/gtk+;./WinGtk/src/glib;./WinGtk/src/gtk+/gdk;../include;../libmp3lame;../mp3x;../frontend;..;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LAMESNDFILE;BRHIST;_DEBUG;WIN32;_CONSOLE;HAVE_MPGLIB;HAVE_CONFIG_H;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;gdk-1.3.lib;gtk-1.3.lib;glib-1.3.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>./WinGtk/src/gtk+;./WinGtk/src/glib;./WinGtk/src/gtk+/gdk;../include;../libmp3lame;../mp3x;../frontend;..;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;LAMEPARSE;WIN32;_CONSOLE;HAVE_MPGLIB;LAMESNDFILE;BRHIST;HAVE_CONFIG_H;</PreprocessorDefinitions>
+    </ClCompile>
+    
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;gdk-1.3.lib;gtk-1.3.lib;glib-1.3.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\obj\Release\frontend/mp3x.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="brhist.c" />
+    <ClCompile Include="console.c" />
+    <ClCompile Include="get_audio.c" />
+    <ClCompile Include="gpkplotting.c" />
+    <ClCompile Include="gtkanal.c" />
+    <ClCompile Include="lametime.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mp3x.c" />
+    <ClCompile Include="parse.c" />
+    <ClCompile Include="timestatus.c" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <ClInclude Include="brhist.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="get_audio.h" />
+    <ClInclude Include="gpkplotting.h" />
+    <ClInclude Include="lametime.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="parse.h" />
+    <ClInclude Include="timestatus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="lame.rc" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

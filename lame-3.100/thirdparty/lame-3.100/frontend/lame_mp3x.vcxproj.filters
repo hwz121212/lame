@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{8e03c1b6-e0a7-4959-b6f2-bcca8a38e5df}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{72429a5c-a5c9-4337-9e11-c5afad1f15ed}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="brhist.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="console.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="get_audio.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="gpkplotting.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="gtkanal.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="lametime.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3x.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="timestatus.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="brhist.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+
+    <ClInclude Include="console.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="get_audio.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="gpkplotting.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="lametime.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="timestatus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="lame.rc" />
+  </ItemGroup>
+
+</Project>

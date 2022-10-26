@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{92342359-2ed5-45ef-8ce7-d57a5c514dc0}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{ed3a0e65-0d54-453f-b27d-bcd376224fe5}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dct64_i386.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_i386.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="interface.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="layer1.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="layer2.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="layer3.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="tabinit.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="dct64_i386.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="decode_i386.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="huffman.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="l2tables.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="layer1.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="layer2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="layer3.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="mpg123.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="mpglib.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="tabinit.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+</Project>
